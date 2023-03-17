@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
@@ -9,6 +10,13 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Image
+        src="/images/profile.jpg" // Route of the image file
+        height={144} // Desired size with correct aspect ratio
+        width={144} // Desired size with correct aspect ratio
+        alt="Your Name"
+      />
 
       <main>
         <h1 className={styles.title}>
